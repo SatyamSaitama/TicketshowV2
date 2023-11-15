@@ -1,0 +1,13 @@
+id,name,email,password,role
+1,admin,satyamkiitm@gmail.com,$2b$12$mB4jlh9SwzqMI7yaAetCFO6SgVDmLv.nGJoQ8Vkdn9AfXgkapaYCG,admin
+6,admin 2,admin@gmail.com,$2b$12$mB4jlh9SwzqMI7yaAetCFO6SgVDmLv.nGJoQ8Vkdn9AfXgkapaYCG,admin
+9,satyam,admin2@gmail.com,pbkdf2:sha256:260000$ce29KKpNJavinDvC$85a65d83cd694938e7affb34dd0a95dac1ef1852d70363ae97c7a55c61232eca,admin
+12,john Doe,satjet577@gmail.com,$2b$12$LRnobqZUJCf9SorKdQuzV.7JPorS4G7lpG8ajTSt/OQPAyHiFYF32,user
+13,admin,21f2000243@ds.study.iitm.ac.in,$2b$12$mB4jlh9SwzqMI7yaAetCFO6SgVDmLv.nGJoQ8Vkdn9AfXgkapaYCG,admin
+16,satyam,786satyamrj@gmail.com,$2b$12$Cjlb8QWsAAI5t5964u1/.exFqUHzdMht7VEQap1r.Tpe7Zwm5M92.,user
+19,Satyam,satyamk@gmail.com,$2b$12$wSZML0yvJB0CE.8DTcCSN.G9Gno6g0JCZ3zcjPgjp/pgsS9IGUfRe,user
+20,user1,userX@gmail.com,$2b$12$mJ35YYjWPMp.Ep5o.J2guOmKoR9Gb1Iu4rjGGGuOv0mymJBOx.4WW,user
+21,user1,testUser@gmail.com,$2b$12$o258mRkHhgDIaqWarUMwwOI4/hXCN3UGs0EzHXqoYHFUEA54yp9Eu,user
+22,satyam,satyam@yahoo.com,$2b$12$XL9qF2ZIa8L9AcX6klwdBeIlFJQCne.XJ3NUWC64lxOYlXCN0foIu,user
+23,user,satyamiitm@gmail.com,$2b$12$9V92cvBZwoFFp8XUuVrgOOe5nRYvTcIvcVoDreVnhGEV/hmFcUu.C,user
+24,user,user@gmail.com,$2b$12$XsoIIkSbc7RIaSp5YCQzEOxw34lo8Yg4K9xdcIO0QlY.zDvqUA9nS,user
