@@ -1,4 +1,4 @@
-
+celery
 Flask
 flask_caching
 Flask_Cors
