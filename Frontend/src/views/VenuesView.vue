@@ -375,7 +375,7 @@ export default {
             const customFileName = `${id}.${this.formData.show_name}.jpg`; // Replace with your desired custom filename
             data.append("image", this.selectedFile, customFileName);
           await  axios
-                .post("http://localhost:5000/upload", data)
+                .post("https://ticketshow3.onrender.com/upload", data)
                 .then((response) => {
                     console.log(response.data);
                     alert("Image uploaded successfully!");

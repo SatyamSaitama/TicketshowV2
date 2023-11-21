@@ -14,7 +14,7 @@
             <div class="card">
               <div class="card-img-top">
                 <RouterLink :to="`/book?id=${show.id}`">
-                  <img :src="`http://localhost:5000/images/${show.venue_id}.${show.show_name}`" class="card-img-top" :alt="show.show_name"
+                  <img :src="`https://ticketshow3.onrender.com/images/${show.venue_id}.${show.show_name}`" class="card-img-top" :alt="show.show_name"
                     style="height: 300px; show-fit:cover;">
                   
                 </RouterLink>

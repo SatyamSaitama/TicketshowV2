@@ -103,7 +103,7 @@
                             <div class="card">
                                 <div class="card-img-top">
                                     <!-- <RouterLink :to="`/book?id=${object.id}`"> -->
-                                    <img :src="`http://localhost:5000/images/${object.venue_id}.${object.show_name}`"
+                                    <img :src="`https://ticketshow3.onrender.com/images/${object.venue_id}.${object.show_name}`"
                                         class="card-img-top" :alt="object.show_name"
                                         style="height: 300px; object-fit:cover;">
 
@@ -295,7 +295,7 @@ export default {
             const customFileName = `${id}.${this.formData.show_name}.jpg`; // Replace with your desired custom filename
             data.append("image", this.selectedFile, customFileName);
           await  axios
-                .post("http://localhost:5000/upload", data)
+                .post("https://ticketshow3.onrender.com/upload", data)
                 .then((response) => {
                     console.log(response.data);
                     alert("Image uploaded successfully!");
