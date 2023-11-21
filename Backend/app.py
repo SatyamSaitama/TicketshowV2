@@ -15,7 +15,7 @@ from flask_restful import Resource, reqparse, Api, fields, marshal, abort
 from flask_swagger_ui import get_swaggerui_blueprint
 
 from model import *
-from test import *
+# from test import *
 
 app = Flask(__name__)
 """===============================================================CONFIGS=========================================================="""
@@ -640,69 +640,69 @@ def userx():
     return get_jwt_identity()
 
 
-@app.route('/export/<int:venue_id>')
-@jwt_required()
-def export(venue_id):
-    export_venue_details_task.delay(venue_id)
-    sender_email = "ticketshow4you@gmail.com"
-    sender_password = "iyyjmaksvcdxwpkt"
-    html_body = """<!DOCTYPE html>
-<html>
-<head>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f9f9f9;
-            margin: 0;
-            padding: 0;
-        }
-        .header {
-            background-color: #007bff;
-            color: white;
-            text-align: center;
-            padding: 20px 0;
-        }
-        .content {
-            max-width: 600px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: white;
-            border-radius: 5px;
-            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-        }
-        .message {
-            font-size: 16px;
-            line-height: 1.6;
-            color: #333;
-        }
+# @app.route('/export/<int:venue_id>')
+# @jwt_required()
+# def export(venue_id):
+#     export_venue_details_task.delay(venue_id)
+#     sender_email = "ticketshow4you@gmail.com"
+#     sender_password = "iyyjmaksvcdxwpkt"
+#     html_body = """<!DOCTYPE html>
+# <html>
+# <head>
+#     <style>
+#         body {
+#             font-family: Arial, sans-serif;
+#             background-color: #f9f9f9;
+#             margin: 0;
+#             padding: 0;
+#         }
+#         .header {
+#             background-color: #007bff;
+#             color: white;
+#             text-align: center;
+#             padding: 20px 0;
+#         }
+#         .content {
+#             max-width: 600px;
+#             margin: 0 auto;
+#             padding: 20px;
+#             background-color: white;
+#             border-radius: 5px;
+#             box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+#         }
+#         .message {
+#             font-size: 16px;
+#             line-height: 1.6;
+#             color: #333;
+#         }
 
-        .footer {
-            text-align: center;
-            margin-top: 20px;
-            color: #777;
-        }
-    </style>
-</head>
-<body>
-    <div class="header">
-        <h1>Your CSV Files</h1>
-    </div>
-    <div class="content">
-        <p class="message">Hello,</p>
-        <p class="message">Here are your requested CSV files.
-        <p class="message">Thank you for your interest.</p>
-    </div>
-    <div class="footer">
-        <p>&copy; 2023 TicketShow. All rights reserved.</p>
-    </div>
-</body>
-</html>
+#         .footer {
+#             text-align: center;
+#             margin-top: 20px;
+#             color: #777;
+#         }
+#     </style>
+# </head>
+# <body>
+#     <div class="header">
+#         <h1>Your CSV Files</h1>
+#     </div>
+#     <div class="content">
+#         <p class="message">Hello,</p>
+#         <p class="message">Here are your requested CSV files.
+#         <p class="message">Thank you for your interest.</p>
+#     </div>
+#     <div class="footer">
+#         <p>&copy; 2023 TicketShow. All rights reserved.</p>
+#     </div>
+# </body>
+# </html>
 
-"""
-    subject = "Here is your csv files"
-    csv_files = ["shows.csv", "venue.csv"]
-    send_email.delay(sender_email, sender_password, subject, html_body, csv_files, get_jwt_identity()['id'])
-    return jsonify({"task": "done"})
+# """
+#     subject = "Here is your csv files"
+#     csv_files = ["shows.csv", "venue.csv"]
+#     send_email.delay(sender_email, sender_password, subject, html_body, csv_files, get_jwt_identity()['id'])
+#     return jsonify({"task": "done"})
 
 
 # ===============================================================================================================================
@@ -799,3 +799,5 @@ api.add_resource(CommentResource, '/comment', '/comment/<int:comment_id>')
 
 # ===============================================================================================================================
 
+if __name__ == '__main__':
+    app.run(port=3000, debug=True)
