@@ -14,8 +14,7 @@
 </template>
 
 <script>
-import { Chart, registerables } from 'chart.js';
-Chart.register(...registerables);
+import Chart from 'chart.js';
 
 export default {
     name: 'PopularityChart',
