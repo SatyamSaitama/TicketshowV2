@@ -16,12 +16,14 @@ from flask_swagger_ui import get_swaggerui_blueprint
 
 from model import *
 # from test import *
+import os
 
 app = Flask(__name__)
 """===============================================================CONFIGS=========================================================="""
 app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite:///venue.sqlite3"
 app.config['CACHE_TYPE'] = 'redis'
-app.config['CACHE_REDIS_HOST'] = 'localhost'
+app.config['CACHE_REDIS_URL'] = os.environ.get('REDIS_URL')
+
 app.config['CACHE_REDIS_PORT'] = 6379
 app.config['SECRET_KEY'] = 'super-secret'
 app.config['JWT_ACCESS_TOKEN_EXPIRES'] = timedelta(days=3)
