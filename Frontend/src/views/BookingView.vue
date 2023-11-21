@@ -144,7 +144,7 @@
                 <p><b>Actors: </b>{{ Actors }}</p>
                 <p><b>Director: </b>{{ Director }}</p>
             </div>
-            <section style="background-image: url('../assets/pexels.jpg'); background-size: cover; background-repeat: no-repeat;"
+            <section style="background-image: url('@/assets/pexels.jpg'); background-size: cover; background-repeat: no-repeat;"
  id="section">
                 <div class="container bootstrap snippets bootdey">
                     <h3 style="    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
