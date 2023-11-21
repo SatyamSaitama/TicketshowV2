@@ -2,10 +2,12 @@ from flask import Flask, request, jsonify, send_file, Response
 from flask_caching import Cache
 from flask_cors import CORS
 from flask_sqlalchemy import SQLAlchemy
+import os
 
 app = Flask(__name__)
 app.config['CACHE_TYPE'] = 'redis'
-app.config['CACHE_REDIS_HOST'] = 'localhost'
+app.config['CACHE_REDIS_URL'] = os.environ.get('REDIS_URL')
+
 app.config['CACHE_REDIS_PORT'] = 6379
 
 # Initialize the cache object
