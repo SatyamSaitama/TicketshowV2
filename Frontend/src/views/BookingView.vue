@@ -144,7 +144,8 @@
                 <p><b>Actors: </b>{{ Actors }}</p>
                 <p><b>Director: </b>{{ Director }}</p>
             </div>
-       
+            <section style="background-image: url('@/assets/pexels.jpg'); background-size: cover; background-repeat: no-repeat;"
+ id="section">
                 <div class="container bootstrap snippets bootdey">
                     <h3 style="    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 ">Comments</h3>
@@ -485,6 +486,7 @@ export default {
     margin: 0;
     padding: 0;
     margin-top: 1px;
+  
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
@@ -564,6 +566,7 @@ export default {
     margin: 0;
     padding: 0;
     margin-top: 1px;
+  
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
