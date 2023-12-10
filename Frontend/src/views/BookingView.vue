@@ -4,7 +4,7 @@
         <div class="custom-container">
 
             <div class="card" v-if="show">
-                <img :src="`https://ticketshow3.onrender.com/images/${show.venue_id}.${show.show_name}`" class="card-img-top"
+                <img :src="`https://image-service-53fa.onrender.com/images/${object.venue_id}.${object.show_name}`" class="card-img-top"
                     :alt="show.show_name">
 
             </div>
