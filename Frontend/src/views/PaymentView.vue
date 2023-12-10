@@ -25,8 +25,7 @@
 
                                 </div>
                                 <div class="ms-auto">
-                                    <img :src="`https://image-service-53fa.onrender.com/images/${show.venue_id}.${show.show_name}`"
-                                        :alt="show.show_name" style="height: 100px; width:80px;object-fit: cover;">
+                                    
                                 </div>
                             </div>
 
