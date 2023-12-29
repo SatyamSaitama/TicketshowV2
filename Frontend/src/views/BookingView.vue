@@ -486,7 +486,7 @@ export default {
     margin: 0;
     padding: 0;
     margin-top: 1px;
-    background-image: url("..\\assets\\pexels.jpg");
+    background-image: url("../assets/pexels.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
