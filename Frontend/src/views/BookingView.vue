@@ -482,11 +482,10 @@ export default {
     top: 0;
     left: 0;
     width: 99vw;
-  height: 100%;
+    height: 100%;
     margin: 0;
     padding: 0;
     margin-top: 1px;
-    background-image: url("..\\assets\\pexels.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
