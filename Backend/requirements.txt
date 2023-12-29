@@ -7,7 +7,7 @@ Flask_RESTful
 flask_sqlalchemy
 flask_swagger_ui
 Jinja2
-python_bcrypt
+bcrypt
 pytz
 Requests
 gunicorn
