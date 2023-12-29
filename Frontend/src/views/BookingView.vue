@@ -211,7 +211,7 @@ export default {
             const OMDB_API_KEY = '34ea11c2'; // Replace with your actual OMDB API key
             const showName = this.show.show_name; // Replace with the show_name you want to search for
 
-            fetch(`http://www.omdbapi.com/?apikey=${OMDB_API_KEY}&t=${showName}`)
+            fetch(`https://www.omdbapi.com/?apikey=${OMDB_API_KEY}&t=${showName}`)
                 .then(response => {
                     if (!response.ok) {
                         throw new Error('Network response was not ok');
