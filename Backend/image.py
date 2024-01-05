@@ -23,7 +23,9 @@ class ImageModel(db.Model):
     name = db.Column(db.String(100))
     data = db.Column(db.LargeBinary)
 
-
+@app.route('/')
+def test():
+    return "connected Image Service"
 @app.route('/upload', methods=['POST'])
 def upload_image():
     if 'image' not in request.files:
