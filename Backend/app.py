@@ -799,6 +799,9 @@ class CommentResource(Resource):
 
 api.add_resource(CommentResource, '/comment', '/comment/<int:comment_id>')
 
+@app.route("/backend")
+def backend():
+    return "Connected Backend"
 # ===============================================================================================================================
 
 if __name__ == '__main__':
