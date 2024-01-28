@@ -35,8 +35,8 @@ run the celery worker and beat
 sh run.sh
 ```
 
-# v2-fronted
-cd v2-fronted
+# Frontend
+cd frontend
 npm install
 npm run serve
 
