@@ -98,10 +98,7 @@
                                 </form>
 
                                 <!-- Button trigger modal -->
-                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                    data-bs-target="#exampleModal" v-if="user">
-                                    Proceed to payment
-                                </button>
+                               
                                 <button type="button" class="btn btn-warning" v-if="!user" @click="redirect">
                                     Login to proceed </button>
 
@@ -182,6 +179,7 @@
                                                 </span>
                                             </label>
                                         </div>
+                                        
 
 
                                     </div>
@@ -199,6 +197,10 @@
                                     <div class="col-8"><b>Total</b></div>
                                     <div class="ms-auto"><b class="text-success">₹{{ total }}</b></div>
                                 </div>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal" v-if="user">
+                                    Proceed to payment
+                                </button>
                             </div>
                         </div>
                     </div>
