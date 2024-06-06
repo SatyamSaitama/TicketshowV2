@@ -3,10 +3,23 @@
     <div class="container">
       <div class="row">
         <div class="col" id="filter">
-          <div class="card">
+          <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+            <span class="material-symbols-outlined">
+tune
+</span>
+          </button>
+
+<div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Backdrop with scrolling</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div class="card">
             <div class="card-header h5">
-              Filter-BY
+              Filter-BY <span><button type="button" class="btn-close float-end" data-bs-dismiss="offcanvas" aria-label="Close"></button></span>
             </div>
+            
             <div class="card-body">
               <form @submit.prevent="filter">
                 <label for="tags" class="h6">Tags:</label>
@@ -55,21 +68,19 @@
                 <label for="nc-17">NC-17</label>
                 <br>
                 <br>
-                <button type="submit"  class="btn btn-primary" >Filter</button>
+                <button type="submit"  data-bs-dismiss="offcanvas" class="btn btn-primary" >Filter</button>
               </form>
             </div>
           </div>
+  </div>
+</div>
+          
         </div>
-        <div class="col" id="results">
-          <div class="card" id="result-card">
-            <div class="card-header h5" id="result-header">
-              Results
-            </div>
-            <div class="card-body" id="result-body">
+       <div class="content-component">
              <contentComponent :objects="results" :ratings="ratings" />
             </div>
-          </div>
-        </div>
+        
+       
       </div>
     </div>
 </template>
@@ -162,6 +173,14 @@ updateSearch(value) {
 </script>
   
 <style scoped>
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
 #filter {
   margin-top: 60px;
   position: absolute;
@@ -170,63 +189,58 @@ updateSearch(value) {
   width: 350px; /* Adjust the width as needed */
 }
 
-#results {
-  margin-top: 60px;
-  position: absolute;
-  top: 0;
-  left: 370px;
-  width: calc(100% - 370px); /* Adjust the width as needed */
-}
-
-#result-card {
-  height: 100%; /* Make sure the cards take the full height of their parent container */
-  --bs-card-spacer-x: 0rem;
-}
-
-#result-body {
-  overflow-y: auto; /* Add vertical scrolling to the card body if content overflows */
-padding: 0px;}
 
 /* Add any additional styling to the cards and their content here */
 
 /* To make sure the checkboxes and labels align properly, you can use flexbox like this: */
-#result-body form {
-  display: flex;
-  flex-wrap: wrap;
-}
 
-.card-body label {
-  flex: 0 0 50%; /* Adjust this percentage based on your layout preference */
-}
+
 
 /* Additional styling for the filter section */
 #filter .card-header {
   background-color: #f2f2f2;
 }
-/* responsive for phone desktop */
-@media (max-width: 768px) {
+@media screen and (max-width: 480px) {
   #filter {
-    position: relative;
-    width: 100%;
-    left: 0;
-  }
-  #results {
-    position: relative;
-    width: 100%;
-    left: 0;
-  }
+  position: unset;
+  /* top: 0;
+  left: 0;
+  width: 350px; Adjust the width as needed */
 }
-@media(max-width: 576px){
-  #filter {
-    position: relative;
-    width: 100%;
-    left: 0;
-  }
-  #results {
-    position: relative;
-    width: 100%;
-    left: 0;
-  }
+.material-symbols-outlined {
+  padding : 10 20 10 20;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
+.content-component{
+  margin-top: 10px;
+  padding-bottom: 10px;
+  padding-top: unset;
+
+ 
+
+
+}
+
+
+
+
+
+
+
+}
+.content-component{
+  margin-top: 50px;
+  padding-bottom: 50px;
+  padding-top: 50px;
+  
+}
+
+.custom-container[data-v-23b6f294] {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  margin: 0 auto;
+}
 </style>
