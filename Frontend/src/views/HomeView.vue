@@ -64,7 +64,7 @@
 </template>
 
 <script>
-import { mapGetters } from 'vuex';
+// import { mapGetters } from 'vuex';
 import axios from '../axios';
 import NavbarComponent from '@/components/NavbarComponent.vue';
 import contentComponent from '@/components/contentComponent.vue';
@@ -145,9 +145,9 @@ export default {
       }
     },
   },
-  computed: {
-    ...mapGetters(['user'])
-  },
+  // computed: {
+  //   ...mapGetters(['user'])
+  // },
   async created() {
     try{
       const response = await axios.get('user')
