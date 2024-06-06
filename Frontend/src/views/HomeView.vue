@@ -18,11 +18,11 @@
     <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="https://assets-in.bmscdn.com/promotions/cms/creatives/1689325117598_oppenheimerdesktop.jpg"
+          <img src="https://www.redwolf.in/image/cache/catalog/banners/official-merch/Across-The-Spider-Verse-Category-Banner-1920-1920x350.jpg?m=1687857106"
             class="d-block w-100" alt="">
         </div>
         <div class="carousel-item">
-          <img src="https://assetscdn1.paytm.com/images/catalog/view_item/1800517/1688725553817.jpg?format=webp"
+          <img src="https://assets-in.bmscdn.com/promotions/cms/creatives/1717494054241_badboys1240x300.jpg"
             class="d-block w-100" alt="">
         </div>
         <div class="carousel-item">
