@@ -486,9 +486,6 @@ export default {
     margin: 0;
     padding: 0;
     margin-top: 1px;
-    background-image: url("../assets/pexels.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
     display: flex;
     justify-content: left;
     align-items: left;
@@ -555,24 +552,36 @@ export default {
     -webkit-user-select: none;
     touch-action: manipulation;
 }
-@media(max-width: 576px){
-    .custom-container {
-    /* Remove the position: fixed; property */
-    /* position: fixed; */
+/* Cool Gradient Background */
+body {
+    background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Example usage in a div container */
+.custom-container  {
+    // fit 
+    background: linear-gradient(135deg, #dd65f6 0% 0%, #fda085 100%);
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* Optional: Adding a blur effect */
+.blur-background {
+    position: absolute;
     top: 0;
     left: 0;
-    width: 99vw;
-  height: 100%;
-    margin: 0;
-    padding: 0;
-    margin-top: 1px;
-  
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: left;
-    align-items: left;
-    flex-direction: column;
-}}
+    right: 0;
+    bottom: 0;
+    background: inherit;
+    filter: blur(20px);
+    z-index: -1;
+}
 
 </style>
