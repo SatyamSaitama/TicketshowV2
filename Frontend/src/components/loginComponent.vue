@@ -171,10 +171,21 @@ img.shaky-head {
 .custom-container {
   width: 50vw;
   height: 100%;
-  background-color: #f2f2f2;
   padding: 20px;
   border-radius: 5px;
   margin: 10px auto;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+@media screen and (max-width: 480px) {
+  .custom-container {
+  width: 100%;
+  height: 100%;
+  background-color: unset;
+  padding: 20px;
+  border-radius: 5px;
+  margin: 10px auto;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+}
+
 </style>
