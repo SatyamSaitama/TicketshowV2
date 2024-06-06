@@ -9,6 +9,8 @@
                 <img :src="`https://image-service-53fa.onrender.com/images/${object.venue_id}.${object.show_name}`"
                  class="card-img-top" :alt="object.show_name"
                   style="height: 300px; object-fit:cover;">
+                 <img :src="require(`@/assets/${image}-chrome-192x192.png`)" alt="TicketShow"
+            class="img-fluid float-left shaky-head">
                 <div class="rating-overlay" >
                   <span class="rating" v-if="ratings[object.id] !== undefined">{{ ratings[object.id].toFixed(1) }}<span>
                       ★
