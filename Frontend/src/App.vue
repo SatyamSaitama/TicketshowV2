@@ -4,18 +4,18 @@
  
 </template>
 <script>
-import axios from 'axios'
-export default{
- async created(){
-  try{
-      console.log("in created part 2")
-      const response = await axios.get('user')
-      this.$store.dispatch('user',response.data)
-    }catch(error){
-      console.log("error in getting user")
-    }
-  }
-}
+// import axios from 'axios'
+// export default{
+//  async created(){
+//   try{
+//       console.log("in created part 2")
+//       const response = await axios.get('user')
+//       this.$store.dispatch('user',response.data)
+//     }catch(error){
+//       console.log("error in getting user")
+//     }
+//   }
+// }
 </script>
 <style lang="scss">
 #app {
