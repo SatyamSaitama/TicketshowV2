@@ -583,5 +583,299 @@ body {
     filter: blur(20px);
     z-index: -1;
 }
+@media only screen and (max-width: 600px) {
+    .description-content, .container-content{
+        all: unset;
+     }
 
+//     .blog-comment::before,
+// .blog-comment::after,
+// .blog-comment-form::before,
+// .blog-comment-form::after {
+//     content: "";
+//     display: table;
+//     clear: both;
+// }
+
+// .blog-comment {
+//     padding-left: 15%;
+//     padding-right: 15%;
+// }
+
+// .blog-comment ul {
+//     list-style-type: none;
+//     padding: 0;
+// }
+
+// .blog-comment img {
+//     opacity: 1;
+//     filter: Alpha(opacity=100);
+//     -webkit-border-radius: 4px;
+//     -moz-border-radius: 4px;
+//     -o-border-radius: 4px;
+//     border-radius: 4px;
+// }
+
+// .blog-comment img.avatar {
+//     position: relative;
+//     float: left;
+//     margin-left: 0;
+//     margin-top: 0;
+//     width: 65px;
+//     height: 65px;
+// }
+
+// .blog-comment .post-comments {
+//     border: 1px solid #eee;
+//     margin-bottom: 20px;
+//     margin-left: 85px;
+//     margin-right: 0px;
+//     padding: 10px 20px;
+//     position: relative;
+//     -webkit-border-radius: 4px;
+//     -moz-border-radius: 4px;
+//     -o-border-radius: 4px;
+//     border-radius: 4px;
+//     background: #fff;
+//     color: #6b6e80;
+//     position: relative;
+// }
+
+// .blog-comment .meta {
+//     font-size: 13px;
+//     color: #aaaaaa;
+//     padding-bottom: 8px;
+//     margin-bottom: 10px !important;
+//     border-bottom: 1px solid #eee;
+// }
+
+// .blog-comment ul.comments ul {
+//     list-style-type: none;
+//     padding: 0;
+//     margin-left: 85px;
+// }
+
+// .blog-comment-form {
+//     padding-left: 15%;
+//     padding-right: 15%;
+//     padding-top: 40px;
+// }
+
+// .blog-comment h3,
+// .blog-comment-form h3 {
+//     margin-bottom: 40px;
+//     font-size: 26px;
+//     line-height: 30px;
+//     font-weight: 800;
+// }
+
+.description-content {
+    margin-top: 0px;
+    padding: 10px 20px;
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    // height: 10px;
+    // /position: relative;
+    // top:0px;
+    // left: 0px;
+
+}
+
+
+#videoContent {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    top: unset;
+    left: unset;
+    height: unset;
+}
+
+// #videoModal {
+//     --bs-modal-zindex: 1055;
+//     --bs-modal-width: 612px;
+// }
+
+// .button-2 {
+//     background-color: rgba(51, 51, 51, 0.05);
+//     border-radius: 8px;
+//     border-width: 0;
+//     color: #333333;
+//     cursor: pointer;
+//     display: inline-block;
+//     font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+//     font-size: 14px;
+//     font-weight: 500;
+//     line-height: 20px;
+//     list-style: none;
+//     margin: 0;
+//     padding: 10px 12px;
+//     text-align: center;
+//     transition: all 200ms;
+//     vertical-align: baseline;
+//     white-space: nowrap;
+//     user-select: none;
+//     -webkit-user-select: none;
+//     touch-action: manipulation;
+// }
+
+#contentPlaceholder {
+   position:unset
+}
+
+.container-content {
+    margin-top: 100px;
+    padding: 100px 10px;
+    
+   
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+iframe{
+    width: 100%;
+    height: 100%;
+}
+
+// .card:hover {
+//     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+//     transform: scale(1.05);
+//     transition: all 0.3s ease-in-out;
+//     cursor: pointer;
+
+// }
+
+// .card {
+//     height: 278px;
+//     width: 193px;
+//     border-radius: 13px;
+//     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+//     position: relative;
+//     top: 126px;
+//     left: 49px;
+// }
+
+// .card-img-top {
+//     position: relative;
+//     top: 0;
+//     left: 0;
+//     height: 279px;
+//     width: 191px;
+//     border-radius: 13px;
+
+//     object-fit: cover;
+// }
+
+
+// /* Custom CSS */
+// .custom-container {
+//     /* Remove the position: fixed; property */
+//     /* position: fixed; */
+//     top: 0;
+//     left: 0;
+//     width: 99vw;
+//     height: 100%;
+//     margin: 0;
+//     padding: 0;
+//     margin-top: 1px;
+//     display: flex;
+//     justify-content: left;
+//     align-items: left;
+//     flex-direction: column;
+// }
+
+// .modal-content {
+//     background-color: white;
+//     padding: 20px;
+//     border-radius: 4px;
+//     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+//     top: 100px;
+//     left: 0;
+// }
+
+
+
+// .button-85 {
+//     padding: 0.6em 3em;
+//     border: none;
+//     outline: none;
+//     color: rgb(255, 255, 255);
+//     background: #111;
+//     cursor: pointer;
+//     position: relative;
+//     z-index: 0;
+//     border-radius: 10px;
+//     user-select: none;
+//     -webkit-user-select: none;
+//     touch-action: manipulation;
+// }
+
+
+// .videoDiv {
+//     position: relative;
+//     top: 130px;
+//     left: 5px;
+//     height: 0;
+//     width: 191px;
+//     border-radius: 13px;
+//     margin-top: 10px;
+//     margin-left: 50px;
+//     margin-bottom: 10px;
+//     margin-right: 50px;
+//     object-fit: cover;
+// }
+
+// .comment-header {
+//     position: relative;
+//     top: 130px;
+//     left: 50px;
+//     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+//     font-size: 30px;
+//     font-weight: 500;
+//     line-height: 20px;
+//     list-style: none;
+//     margin: 0;
+//     padding: 10px 12px;
+//     text-align: center;
+//     transition: all 200ms;
+//     vertical-align: baseline;
+//     white-space: nowrap;
+//     user-select: none;
+//     -webkit-user-select: none;
+//     touch-action: manipulation;
+// }
+// /* Cool Gradient Background */
+// body {
+//     background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+//     height: 100vh;
+//     margin: 0;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+// }
+
+// /* Example usage in a div container */
+// .custom-container  {
+//     // fit 
+//     background: linear-gradient(135deg, #dd65f6 0% 0%, #fda085 100%);
+//     border-radius: 20px;
+//     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+// }
+
+
+
+// /* Optional: Adding a blur effect */
+// .blur-background {
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     right: 0;
+//     bottom: 0;
+//     background: inherit;
+//     filter: blur(20px);
+//     z-index: -1;
+// }
+    
+}
 </style>
