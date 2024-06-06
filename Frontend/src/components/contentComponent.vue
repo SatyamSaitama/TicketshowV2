@@ -7,7 +7,7 @@
             <div class="card-img-top">
               <RouterLink :to="`/book?id=${object.id}`">
                 
-                  <img :src="`require(`@/assets/${object.venue_id}.${object.show_name}.jpg`"
+                  <img :src="require(`@/assets/${object.venue_id}.${object.show_name}.jpg`)"
                  class="card-img-top" :alt="object.show_name"
                   style="height: 300px; object-fit:cover;">
                   <span class="rating" v-if="ratings[object.id] !== undefined">{{ ratings[object.id].toFixed(1) }}<span>
