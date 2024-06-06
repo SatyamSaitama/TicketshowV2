@@ -387,6 +387,13 @@ input:focus {
     width: 30px;
     height: 30px;
   }
+  .dropstart .dropdown-menu[data-bs-popper] {
+  top: 0;
+  left: 100%;
+  right: auto;
+  margin-top: 0;
+  margin-right: var(--bs-dropdown-spacer);
+}
 }
 .avatar{
  width: 40px; 
