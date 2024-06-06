@@ -19,15 +19,15 @@
       <div class="carousel-inner">
         <div class="carousel-item active">
           <img src="https://www.redwolf.in/image/cache/catalog/banners/official-merch/Across-The-Spider-Verse-Category-Banner-1920-1920x350.jpg?m=1687857106"
-            class="d-block w-100" alt="">
+            class="responsive-img" alt="">
         </div>
         <div class="carousel-item">
           <img src="https://assets-in.bmscdn.com/promotions/cms/creatives/1717494054241_badboys1240x300.jpg"
-            class="d-block w-100" alt="">
+            class="responsive-img" alt="">
         </div>
         <div class="carousel-item">
           <img src="https://assets-in.bmscdn.com/promotions/cms/creatives/1689325117598_oppenheimerdesktop.jpg"
-            class="d-block w-100" alt="">
+            class="responsive-img" alt="">
         </div>
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
@@ -205,5 +205,13 @@ export default {
 p {
   margin-top: 156px;
   margin-bottom: 1rem;
+}
+@media  (max-width: 568px) {
+    
+  .responsive-img{
+    width: 100%;
+    height: 150px;
+    display: block;
+  }
 }
 </style>
