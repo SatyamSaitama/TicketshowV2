@@ -280,7 +280,7 @@ export default {
 .search {
   width: 300px;
   height: 33px;
-  border-radius: 5px;
+  
   border: 1px solid #ccc;
   padding-left: 10px;
   font-size: 16px;
@@ -324,7 +324,7 @@ input:focus {
 /* Media Query for Phones */
 @media screen and (max-width: 480px) {
   .search {
-    width: 200px;
+    width: 150px;
   }
   .input-group-append {
     padding: 0 5px;
@@ -387,13 +387,7 @@ input:focus {
     width: 30px;
     height: 30px;
   }
-  .dropstart .dropdown-menu[data-bs-popper] {
-  top: 0;
-  left: 100%;
-  right: auto;
-  margin-top: 0;
-  margin-right: var(--bs-dropdown-spacer);
-}
+ 
 }
 .avatar{
  width: 40px; 
