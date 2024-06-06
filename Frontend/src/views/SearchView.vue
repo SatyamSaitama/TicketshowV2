@@ -3,7 +3,7 @@
     <div class="container">
       <div class="row">
         <div class="col" id="filter">
-          <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+          <button class="btn btn-primary floating-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
             <span class="material-symbols-outlined">
 tune
 </span>
@@ -200,6 +200,33 @@ updateSearch(value) {
 #filter .card-header {
   background-color: #f2f2f2;
 }
+.content-component{
+  margin-top: 50px;
+  padding-bottom: 50px;
+  padding-top: 50px;
+  
+}
+
+.custom-container[data-v-23b6f294] {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  margin: 0 auto;
+}
+ .floating-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            font-size: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999; /* Ensure the button is on top of everything */
+            cursor: pointer;
+        }
 @media screen and (max-width: 480px) {
   #filter {
   position: unset;
@@ -214,7 +241,7 @@ updateSearch(value) {
 }
 
 .content-component{
-  margin-top: 10px;
+  margin-top: -10px;
   padding-bottom: 10px;
   padding-top: unset;
 
@@ -230,17 +257,5 @@ updateSearch(value) {
 
 
 }
-.content-component{
-  margin-top: 50px;
-  padding-bottom: 50px;
-  padding-top: 50px;
-  
-}
 
-.custom-container[data-v-23b6f294] {
-  width: 100%;
-  height: 100%;
-  padding: 20px;
-  margin: 0 auto;
-}
 </style>
