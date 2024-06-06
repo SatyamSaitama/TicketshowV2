@@ -6,7 +6,7 @@
           <div class="card">
             <div class="card-img-top">
               <RouterLink :to="`/book?id=${object.id}`">
-                <img :src="`https://image-service-53fa.onrender.com/images/${object.venue_id}.${object.show_name}`"
+                <img :src="getImagePath(object.venue_id, object.show_name)"
                  class="card-img-top" :alt="object.show_name"
                   style="height: 300px; object-fit:cover;">
                 <div class="rating-overlay" >
