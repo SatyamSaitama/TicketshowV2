@@ -6,10 +6,10 @@
           <div class="card">
             <div class="card-img-top">
               <RouterLink :to="`/book?id=${object.id}`">
-                
-                  <img :src="require(`@/assets/${object.venue_id}.${object.show_name}.jpg`)"
+                <img :src="`https://image-service-53fa.onrender.com/images/${object.venue_id}.${object.show_name}`"
                  class="card-img-top" :alt="object.show_name"
                   style="height: 300px; object-fit:cover;">
+                <div class="rating-overlay" >
                   <span class="rating" v-if="ratings[object.id] !== undefined">{{ ratings[object.id].toFixed(1) }}<span>
                       ★
 
