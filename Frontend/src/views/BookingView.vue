@@ -4,7 +4,7 @@
         <div class="custom-container">
 
             <div class="card" v-if="show">
-                <img :src="`https://image-service-53fa.onrender.com/images/${show.venue_id}.${show.show_name}`" class="card-img-top"
+                <img :src="getImagePath(show.venue_id,show.show_name)" class="card-img-top"
                     :alt="show.show_name">
 
             </div>
@@ -207,6 +207,9 @@ export default {
         };
     },
     methods: {
+    getImagePath(venueId, showName) {
+      return require(`@/assets/${venueId}.${showName}.jpg`);
+    },
         async showDetails() {
             const OMDB_API_KEY = '34ea11c2'; // Replace with your actual OMDB API key
             const showName = this.show.show_name; // Replace with the show_name you want to search for
