@@ -140,7 +140,7 @@
                 <h3>Description</h3>
                 <hr>
                 <p> <b>IMDB Rating: </b>{{ IMDBRating }}</p>
-                <p style="line-height:20px"> <b>Plot: </b>{{ plot }}</p>
+                <p> <b>Plot: </b>{{ plot }}</p>
                 <p><b>Actors: </b>{{ Actors }}</p>
                 <p><b>Director: </b>{{ Director }}</p>
             </div>
