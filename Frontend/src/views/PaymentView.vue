@@ -25,7 +25,7 @@
 
                                 </div>
                                 <div class="ms-auto">
-                                   <img :src="`https://image-service-53fa.onrender.com/images/${show.venue_id}.${show.show_name}`"
+                                                  <img :src="getImagePath(show.venue_id,show.show_name)" 
                                         :alt="show.show_name" style="height: 100px; width:80px;object-fit: cover;"> 
                                 </div>
                             </div>
@@ -244,6 +244,9 @@ export default {
             this.$router.push('/login');
 
         },
+        getImagePath(venueId, showName) {
+      return require(`@/assets/${venueId}.${showName}.jpg`);
+    },
         getImageURL() {
             return require(`@/assets/${this.show.venue_id}.${this.show.show_name}.jpg`);
         }, calculateTotal() {
